@@ -15,7 +15,7 @@ class CSVdatabase:
 		self.__CSVdatabase_dir_name = self.__get_file_dir_name(); 
 		self.__CSVdatabase_name = self.__CSVdatabase_dir_name + "\\" + csv_table_name
 		self.__CSVdatabase_keys = []
-		self.__CSVdatabase_infor_type = 1;
+		self.__CSVdatabase_infor_type = 1
 		try:
 			self.__CSVdatabase_lenght = len( pandas.read_csv( self.__CSVdatabase_name ).index ) if  os.path.isfile(self.__CSVdatabase_name) else 0		
 			
